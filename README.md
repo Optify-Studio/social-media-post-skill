@@ -1,5 +1,7 @@
 # Social Media Post Skill
 
+![A social media post created from a brief using HTML and CSS, illustrated with a sample infographic](assets/readme-banner.png)
+
 An agent skill for creating custom social media posts and infographics with editable HTML and CSS, then exporting PNG or PDF. It works from a project, supplied assets, or a standalone creative brief. The skill instructs your agent to ask about the audience, content, style, brand, platform, dimensions, and output before designing.
 
 ## What it does
@@ -108,6 +110,7 @@ The smoke test creates a sample PNG and PDF in a temporary directory, verifies f
 
 ```text
 SKILL.md             Agent instructions and workflow
+assets/              README banner and its editable HTML source
 scripts/render.cjs   Playwright-based PNG/PDF renderer
 tests/fixture.html   Sample infographic for smoke testing
 tests/smoke.cjs      Renderer smoke tests
