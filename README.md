@@ -1,5 +1,10 @@
 # Social Media Post Skill
 
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-397c5e)](https://agentskills.io/)
+[![Output](https://img.shields.io/badge/export-PNG%20%7C%20PDF-397c5e)](#what-it-does)
+[![Built with](https://img.shields.io/badge/built%20with-HTML%20%2B%20CSS-397c5e)](#renderer-setup-and-manual-use)
+[![GitHub stars](https://img.shields.io/github/stars/Optify-Studio/social-media-post-skill?style=flat)](https://github.com/Optify-Studio/social-media-post-skill/stargazers)
+
 ![A social media post created from a brief using HTML and CSS, illustrated with a sample infographic](assets/readme-banner.png)
 
 An agent skill for creating custom social media posts and infographics with editable HTML and CSS, then exporting PNG or PDF. It works from a project, supplied assets, or a standalone creative brief. The skill instructs your agent to ask about the audience, content, style, brand, platform, dimensions, and output before designing.
@@ -18,28 +23,6 @@ The skill is a set of instructions for an agent, not a standalone graphic-design
 
 The [skills CLI](https://github.com/vercel-labs/skills) supports OpenCode, Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, and many others. It currently requires Node.js 22.20 or newer. `npx` may download the CLI; review its source and permissions before use.
 
-### From this local folder
-
-From the project where you want the skill, replace the path with the absolute or relative path to this folder:
-
-```bash
-npx skills add /path/to/social-media-post-skill --skill social-media-post
-```
-
-Choose your agents when prompted. Quote paths containing spaces. On Windows PowerShell, for example:
-
-```powershell
-npx skills add 'C:\path\to\social-media-post-skill' --skill social-media-post
-```
-
-For all projects, add `-g`. To select particular agents and skip prompts:
-
-```bash
-npx skills add /path/to/social-media-post-skill --skill social-media-post -g -a opencode -a claude-code -a codex -a cursor -a gemini-cli -a github-copilot -y
-```
-
-Alternatively use `-a '*'` to target all agents supported by the CLI. Add `--copy` if symlinks are unavailable. Global installation writes to your user-level agent directories; omit `-g` for a project-only install. You may need to restart your agent for it to discover newly installed skills. Check the [full supported agent list](https://github.com/vercel-labs/skills/blob/main/docs/agents.md) and `npx skills add --help` for current options.
-
 ### Install from GitHub
 
 From any project, install the skill for your choice of agents:
@@ -48,7 +31,7 @@ From any project, install the skill for your choice of agents:
 npx skills add Optify-Studio/social-media-post-skill --skill social-media-post
 ```
 
-Add `-g` to install across projects. The CLI installs the skill and bundled renderer; it does **not** install the renderer's Playwright dependency.
+Choose your agents when prompted. Add `-g` to install across projects. The CLI installs the skill and bundled renderer; it does **not** install the renderer's Playwright dependency. You may need to restart your agent for it to discover the skill.
 
 ### Prefer a prompt instead of a command?
 
